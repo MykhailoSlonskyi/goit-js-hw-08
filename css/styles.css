@@ -45,6 +45,14 @@ body {
   background-color: rgba(46, 47, 66, 0.8);
 }
 
+.basicLightbox--img .basicLightbox__placeholder > img:first-child:last-child {
+  width: min(1112px, calc(100vw - 32px));
+  height: min(640px, calc(100vh - 56px));
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+}
+
 @media (max-width: 767px) {
   .gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
